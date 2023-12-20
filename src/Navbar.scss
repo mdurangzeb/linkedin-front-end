@@ -1,0 +1,66 @@
+nav{
+
+
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2rem;
+    
+
+    .left{
+        display: flex;
+        gap: 1rem;
+    img{
+        width: 41px;
+        height: 41px;
+
+
+    }
+    .input{
+        
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: rgb(225, 237, 237);
+        padding: 0 1rem;
+        input{
+            padding: 3px;
+            background-color: rgb(225, 237, 237);
+            letter-spacing: 1px;
+            
+        }
+    }
+
+}
+
+.tabs{
+    svg{
+        font-size: 1.7rem;
+        color: rgb(86, 80, 80);
+    }
+    display: flex;
+    gap: 1.5rem;
+    span{
+        color: gray;
+        display: block;
+        margin-top: 4px;
+    }
+    .tab{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+.extra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+}

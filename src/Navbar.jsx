@@ -1,4 +1,3 @@
-import React from 'react';
 import './Navbar.scss';
 import {AiOutlineSearch} from 'react-icons/ai'
 import {AiFillHome} from 'react-icons/ai'
@@ -8,6 +7,8 @@ import {AiFillMessage} from 'react-icons/ai'
 import {IoNotificationsSharp} from 'react-icons/io5'
 import {BsPersonCircle} from 'react-icons/bs'
 import {PiDotsNineBold} from 'react-icons/pi'
+import { Link } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -23,26 +24,28 @@ const Navbar = () => {
         </div>
         </div>
         <div className="tabs">
-            <div className="tab">
+            <Link to="/" className="tab">
                 <AiFillHome/>
                 <span>Home</span>
-            </div>
-            <div className="tab">
+            </Link>
+            <Link to="/network" className="tab">
                 <FaNetworkWired/>
                 <span>My Network</span>
-            </div>
-            <div className="tab">
+            </Link>
+            <Link to="/jobs" className="tab">
                 <BsFillHandbagFill/>
                 <span>jobs</span>
-            </div>
-            <div className="tab">
+            </Link>
+            <Link to='/message' className="tab">
                 <AiFillMessage/>
                 <span>Messaging</span>
-            </div>
-            <div className="tab">
+                          
+            </Link>
+            <Link to="/notification" className="tab">
                 <IoNotificationsSharp/>
                 <span>Notifications</span>
-            </div>
+               
+            </Link>
             <div className="tab">
                 <BsPersonCircle/>
                 <span>Me</span>
